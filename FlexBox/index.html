@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color : aqua;
+            --pr-border : 2px solid black;
+            --pr-wodth : 300px
+        }
+        .container{
+            height: 100vh;
+            border: 5px solid black;
+            padding: 2px;
+            margin: 2px;
+            background-color: beige;
+            display : flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: space-around;
+            /* flex-flow: row-reverse; */
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            padding: 2px;
+            margin: 2px;
+            
+        }
+        #box1{
+            order: 54;
+            border: 2px solid brown;
+            background-color: aqua;
+            flex-shrink: 5;
+        }
+        #box2{
+            /* flex-grow: 2; */
+            border: 2px solid rgb(11, 235, 11);
+            background-color: blue;
+        }
+        #box3{
+            
+            border: 2px solid rgb(95, 31, 65);
+            background-color: yellow;
+        }
+        #box4{
+            border: 2px solid crimson;
+            background-color: rgb(255, 0, 166);
+        }
+
+        #test{
+            width: var(--pr-wodth);
+            height: var(--pr-wodth);
+            border: var(--pr-border);
+            background-color: rgba(137, 43, 226, 0.404);
+            box-shadow: inset 7px 10px 5px black, 10px 15px 10px blue;
+            text-shadow: 7px 10px 5px white, 10px 15px 10px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div> -->
+        <div id="test">
+            <h1>Happy!</h1>
+        </div>
+    </div>
+</body>
+</html>

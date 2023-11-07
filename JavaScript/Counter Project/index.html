@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Counter Game</title>
+</head>
+<body>
+
+    <div class="wrapper flex flex-col justify-center items-center w-[100vw] h-[100vh] bg-[#344151] gap-10">
+        <div class="text-[#036s8d4] font-medium text-[20px]">
+            Increment And Decrement
+        </div>
+
+        <div class="bg-white flex flex-row text-[25px] text-[#344151]   rounded-sm gap-11 p-3 px-5">
+            <!-- Negative Button -->
+            <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+
+            <div class="font-bold" id="counter">0</div>
+
+            <!-- Positive Button -->
+            <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/a429ed82ac.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

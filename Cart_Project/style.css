@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.container{
+    width: 45%;
+    height: 50%;
+    background-color: rgb(240, 240, 235);
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+    transition: all 0.7s linear 0.3s;
+}
+
+.container:hover{
+    transform: scale(1.05);
+    
+}
+.contImg{
+    width: 45%;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    object-fit: cover;
+}
+
+.details{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.details p{
+    font-size: 1.2rem;
+}
+
+.details h2{
+    font-size: 2rem;
+    
+}
+
+
+
+#price1{
+    font-size: 2rem;
+    color: #35705A;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#price2{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-decoration: line-through;
+    font-weight: 500;
+    color: #70768f;
+}
+
+#mug{
+    letter-spacing: 5px;
+}
+
+
+.btn{
+    width: 90%;
+    padding: 10px;
+    background: linear-gradient(to right, black 50%, #35705A 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px black;
+    transition: all 1s linear 0.1s;
+}
+
+.btn:hover{
+    background-position: left bottom;
+}
+
+.btnText{
+    color: azure;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: all 1s linear;
+}
+
+.btnText:hover{
+    color: rgb(142, 215, 215);
+}
